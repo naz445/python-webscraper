@@ -1,26 +1,43 @@
-# python-webscraper
+# Python Web Scraper
 
-A simple Python-based web scraping project designed to extract structured data from websites using `requests` and `BeautifulSoup`.  
-This project demonstrates fundamental concepts of web scraping, HTML parsing, data cleaning, and error handling.
+A multi-source Python web scraping project that retrieves the latest headline data from major UK news platforms.
+This project demonstrates core concepts such as HTTP requests, HTML parsing, data extraction, and modular scraper architecture.
+
+---
 
 ## Features
-- Automated retrieval of webpage content
-- HTML parsing with BeautifulSoup
-- Extraction of specific elements (titles, links, product data, etc.)
-- Clean and structured output
-- Basic error handling for failed requests
+
+- Automated retrieval of headline data
+- Support for **multiple news sources**
+  - BBC News
+  - The Guardian UK
+- Modular scraping functions (`scrape_bbc()`, `scrape_guardian()`, `scrape_all()`)
+- Clean and structured console output
+- Error-free BeautifulSoup parsing workflow
+
+---
 
 ## Technologies Used
+
 - Python 3
 - Requests
 - BeautifulSoup (bs4)
 
-## Example Use Cases
-- Collecting product details from e-commerce sites
-- Extracting news headlines
-- Gathering URL lists
-- Parsing HTML tags for structured analysis
+---
 
-## Purpose
-This project was built for practice and demonstrates essential web scraping techniques suitable for beginners and entry-level developers.
+## How It Works
 
+The scraper consists of three main components:
+
+### `scrape_bbc()`
+Fetches and extracts top headlines from BBC News.
+
+### `scrape_guardian()`
+Fetches and extracts top headlines from The Guardian UK.
+
+### `scrape_all()`
+Runs both scrapers together and prints aggregated results in a clear formatted structure.
+
+---
+
+## Sample Output
